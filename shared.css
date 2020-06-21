@@ -1,0 +1,137 @@
+/* Reset all elements to have certain behaviour */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.main-header { 
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #0000FF;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 99999;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-header__brand {
+    color: #ffff28;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    /* If its inline then percentages on img wont have effect */
+    display: inline-block; 
+    height: 22px;
+}
+
+.main-header img {
+    height: 100%;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #ffff28;
+  cursor: pointer;
+  border-bottom: 3px solid #ffff28;
+}
+
+.cta a { 
+    background-color: #35AAff;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.cta a:hover,
+.cta a:active {
+   color: #0000FF;
+   background-color: #ffff28;
+   border: none;
+}
+
+.main-footer {
+    background: #000000;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer_link {
+    display: inline-block;
+    margin: 0 16px;
+}
+.main-footer_link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-footer_link a:hover,
+.main-footer_link a:active {
+    color: #ffff28;
+}
+
+.button {
+    background: #35AAff;
+    color: #ffffff;
+    font: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: #ffff28;
+    color: #35AAff;
+}
+
+.plan_highlighted .button:hover,
+.plan_highlighted .button:active {
+    background: #ffff28;
+    color: #CD21FF;
+}
+
+.button:focus {
+    outline: none;
+}
