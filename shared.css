@@ -28,7 +28,7 @@ body {
     top: 0;
     background: #0000FF;
     color: #fff;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     z-index: 99999;
 }
 
@@ -38,12 +38,12 @@ body {
 }
 .main-header__brand {
     color: #ffff28;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
     text-decoration: none;
     /* If its inline then percentages on img wont have effect */
     display: inline-block; 
-    height: 22px;
+    height: 1.375rem
 }
 
 .main-header img {
@@ -65,13 +65,13 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 .main-nav__item a:hover,
 .main-nav__item a:active {
@@ -83,7 +83,7 @@ body {
 .cta a { 
     background-color: #35AAff;
     text-transform: uppercase;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -96,8 +96,8 @@ body {
 
 .main-footer {
     background: #000000;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer_links {
@@ -109,7 +109,7 @@ body {
 
 .main-footer_link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 11rem;
 }
 .main-footer_link a {
     color: #ffffff;
@@ -126,8 +126,8 @@ body {
     color: #ffffff;
     font: inherit;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
     cursor: pointer;
 }
 
