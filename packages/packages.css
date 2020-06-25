@@ -1,5 +1,5 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .background {
@@ -12,7 +12,7 @@ main {
 
 .package {
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     background: #A944FF;
     /* border: 4px solid #2f0652; */
     border-left: 0;
@@ -29,7 +29,7 @@ main {
     color: #FFFFFF;
     text-decoration: none;
     display: block;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .package_badge {
@@ -41,7 +41,7 @@ main {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
-    padding: 10px;
+    padding: 0.6rem;
     margin: 0;
     z-index: 1;
 }
@@ -60,15 +60,15 @@ main {
 
 .package_subtitle {
     color: #ededed;
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: 300;
 }
 
 .package_info {
-    padding: 12px;
+    padding: 0.75rem;
     background: #5685dd;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
 }
 
