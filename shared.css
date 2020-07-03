@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background: #ADADAD;
     font-family: 'Montserrat', sans-serif;
@@ -10,7 +14,10 @@ body {
     margin: 0;
     z-index: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+}
+
+main {
+  min-height:  calc(100vh - 3rem - 8.2rem); 
 }
 
 .backdrop {
@@ -64,12 +71,11 @@ body {
   
 .main-header__brand {
     color: #ffff28;
-    font-size: 1.375rem;
     font-weight: 700;
     text-decoration: none;
     /* If its inline then percentages on img wont have effect */
     display: inline-block; 
-    height: 1.375rem;
+    height: 1.5rem;
     vertical-align: middle;
 }
 
@@ -78,9 +84,8 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
-    width: calc(100% - 125px);
     vertical-align: middle;
 }
 
@@ -123,7 +128,7 @@ body {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 30% auto;
     padding: 0;
     text-align: center;
   }
@@ -261,4 +266,20 @@ body {
 
   .open {
       display: block !important;
+  }
+
+  @media (min-width: 50rem) {
+      .toggle-button {
+          display: none
+      }
+      .main-nav {
+          width: calc(100% - 28px);
+          display: inline-block;
+          height: 2rem;
+          vertical-align: middle;
+      }
+
+      .main-nav__item {
+        margin: 0.4rem 1rem;
+    }
   }

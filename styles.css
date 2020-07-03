@@ -1,5 +1,5 @@
 #overview {
-    background:url('./images/servers.jpg') left 50% bottom 20%/cover no-repeat border-box border-box; 
+    background:url('./images/servers.jpg') center/cover no-repeat border-box border-box; 
     /* background-size: 100% 100%; 
     background-origin: border-box;
     background-clip: border-box; */
@@ -13,6 +13,11 @@
     color: #000;
 }
 
+.section-title {
+    color: #CD21FF;
+    text-align: center;
+}
+
 #overview h1 {
     color: #ffffff;
     position: absolute;
@@ -21,34 +26,22 @@
     font-weight: 900;
     font-size: 1.75rem;
     top: 50%;
-    margin: 0 30%;
+    margin: 0 8%;
 }
 
-.section-title {
-    color: #CD21FF;
-    text-align: center;
-}
-
-.plan_list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
 
 .plan {
     background: #5685DD;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     color: #ffffff;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    width: 100%;
 }
 
 .plan_highlighted { 
     background: #CD21FF;
-    box-shadow: 2px 2px 2px 2px rgba(0,  0, 0, .8);
+    /* box-shadow: 2px 2px 2px 2px rgba(0,  0, 0, .8); */
 }
 
 .plan_annotation {
@@ -105,9 +98,7 @@
 }
 
 .key_feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
 }
 
 .key_feature_image {
@@ -176,3 +167,32 @@
     background: #ff5454;
     border-color: #ff5454;
   }
+
+  @media (min-width: 50rem) {
+    #overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+    #overview h1 {
+        font-size: 2rem;
+        margin: 0 25%;
+    }
+    .plan_list {
+        width: 100%;
+        text-align: center;
+    }
+    .plan {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 16rem;
+        max-width: 18rem;
+    }
+
+    .key_feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        max-width: 18rem;
+    }
+}
