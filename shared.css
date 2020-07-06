@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family==Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700');
+
+
 /* Reset all elements to have certain behaviour */
 * {
     box-sizing: border-box;
@@ -39,11 +44,9 @@ main {
     color: #fff;
     padding: 0.5rem 1rem;
     z-index: 99999;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .toggle-button {
@@ -73,14 +76,11 @@ main {
     color: #ffff28;
     font-weight: 700;
     text-decoration: none;
-    /* If its inline then percentages on img wont have effect */
-    display: inline-block; 
-    height: 1.5rem;
-    vertical-align: middle;
 }
 
 .main-header img {
-    height: 100%;
+    height: 1.5rem;
+    vertical-align: middle;
 }
 
 .main-nav {
@@ -93,10 +93,11 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
 }
 
@@ -128,9 +129,12 @@ main {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 30% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .mobile-nav__item {
@@ -264,6 +268,12 @@ main {
     border-color: #ff5454;
   }
 
+  .button[disabled] {
+    cursor:  not-allowed;
+    background: #cecece;
+    color: #a1a1a1;
+  }
+
   .open {
       display: block !important;
   }
@@ -273,10 +283,11 @@ main {
           display: none
       }
       .main-nav {
-          width: calc(100% - 28px);
+          /* width: calc(100% - 28px);
           display: inline-block;
           height: 2rem;
-          vertical-align: middle;
+          vertical-align: middle; */
+          display: flex;
       }
 
       .main-nav__item {
