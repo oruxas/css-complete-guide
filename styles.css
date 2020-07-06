@@ -179,20 +179,31 @@
     }
     .plan_list {
         width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .plan {
-        display: inline-block;
         width: 30%;
-        vertical-align: middle;
         min-width: 16rem;
         max-width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
+    }
+
+    .plan_highlighted {
+        height: 32rem;
+        z-index: 50;;
     }
 
     .key_feature {
-        display: inline-block;
         width: 30%;
-        vertical-align: top;
         max-width: 18rem;
+    }
+    .key_features_list {
+        display: flex;
+        justify-content: center;
     }
 }
