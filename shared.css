@@ -174,12 +174,14 @@ main {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .main-footer_link {
-    display: inline-block;
-    margin: 0 11rem;
+    margin: 0.5rem 11rem;
 }
 .main-footer_link a {
     color: #ffffff;
@@ -292,5 +294,12 @@ main {
 
       .main-nav__item {
         margin: 0.4rem 1rem;
+    }
+    .main-footer_link {
+        margin: 0.5rem;
+    }
+    .main-footer_links {
+        flex-direction: row;
+        justify-content: center;
     }
   }
