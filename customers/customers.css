@@ -61,6 +61,9 @@
     .testimonial {
       margin: 3rem auto;
       max-width: 76rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .testimonial__list {
@@ -69,14 +72,9 @@
     }
     .testimonial__image-container {
       width: 65%;
-      display: inline-block;
-      vertical-align: middle;
-
     }
 
     .testimonial__info {
-      display: inline-block;
       width: 30%;
     }
-    
   }
