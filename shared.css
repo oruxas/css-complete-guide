@@ -10,6 +10,9 @@
 
 html {
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 body {
@@ -19,10 +22,24 @@ body {
     margin: 0;
     z-index: 0;
     overflow-x: hidden;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 3.5rem auto fit-content(8.2rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                         
+    /*justify-items: stretch; /*x axis*/
+    /*align-items: stretch; /*y axis*/
+    /*justify-content: center; /*x axis*/
+    /*align-content: center; /*y axis*/
 }
 
 main {
-  min-height:  calc(100vh - 3rem - 8.2rem); 
+  /* min-height:  calc(100vh - 3rem - 8.2rem);  */
+  /* grid-row: 2 / 3; */
+  grid-area: main;
 }
 
 .backdrop {
@@ -166,8 +183,10 @@ main {
 .main-footer {
     background: #000000;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     position: sticky;
+    /* grid-row: 3 / 4; */
+    grid-area: footer;
 }
 
 .main-footer_links {
@@ -301,5 +320,9 @@ main {
     .main-footer_links {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .main-footer{
+        padding: 2rem;
     }
   }
